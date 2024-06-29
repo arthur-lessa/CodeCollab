@@ -4,9 +4,14 @@ body {
     font-family: 'Raleway';
     margin: 0;
     padding: 0;
-    background-color: #2d3250;
+    // background-color: rgba(45, 50, 80, 0.85);
     color: white;
     text-align: center;
+    background:
+    linear-gradient(
+      rgba(45,50,80,.85),rgba(45,50,80,.85)
+    ),
+    url(../Archives/Background_Dev.png) no-repeat;
 }
 
 .navbar {
@@ -32,8 +37,8 @@ body {
 }
 
 .navbar a:hover {
-    background-color: #f9b17a;
-    color: black;
+    background-color: #2d3250;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,16 +84,23 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Raleway Regular', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 /* "área" dos desenvolvedores */
 .developers {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
     flex-wrap: wrap;
-    margin-top: 15%;
+    position: absolute;
+    top: 50%; /* Posiciona no centro vertical da página */
+    left: 50%; /* Posiciona no centro horizontal da página */
+    transform: translate(-50%, -50%); /* Centraliza perfeitamente */
+    width: 100%; /* Ocupa toda a largura disponível */
+    max-width: 1200px; /* Limita a largura máxima para um layout responsivo */
+    padding: 0 20px; /* Adiciona espaçamento nas laterais */
+    box-sizing: border-box; /* Garante que o padding não aumente a largura total */
 }
 
 /* estilo dos cards de desenvolvedor */
@@ -97,7 +109,7 @@ body {
     flex-direction: column;
     align-items: center;
     width: 300px;
-    padding: 20px;
+    padding: 55px;
     background-color: #676f9d;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -110,8 +122,8 @@ body {
 }
 
 .photo {
-    width: 150px;
-    height: 150px;
+    width: 175px;
+    height: 175px;
     background-color: #ddd;
     border-radius: 50%;
     overflow: hidden;
@@ -140,11 +152,11 @@ body {
 
 .info a {
     font-size: 18px;
-    color: #424769;
+    color: #2d3250;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .info a:hover {
-    color: #d6dbff;
+    color: #FFFFFF;
 }
