@@ -1,47 +1,65 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 0;
     padding: 0;
-    background-color: #F8EFE0;
+    background-color: #2d3250;
+    color: white;
+    text-align: center;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #E2AB2D;
+    background-color: #676f9d;
     padding: 10px 20px;
+    text-align: center;
 }
 
 .navbar a {
+    background-color: #424769;
     color: white;
     text-decoration: none;
     padding: 14px 20px;
-    display: block;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.6s ease, border-radius 0.6s ease;
+    text-align: center;
 }
 
 .navbar a:hover {
-    background-color: #575757;
+    background-color: #f9b17a;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1.2);
 }
 
 .navbar .logo {
     font-size: 1.5em;
     font-weight: bold;
+    text-align: center;
 }
 
 .navbar .menu {
     display: flex;
     list-style: none;
+    align-items: center;
 }
 
 .navbar .menu li {
     margin: 0 10px;
+    align-items: center;
+
 }
 
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
     .navbar .menu {
         flex-direction: column;
@@ -51,5 +69,6 @@ body {
         width: 100%;
         text-align: center;
         margin: 0;
+
     }
 }
