@@ -1,0 +1,8 @@
+raleway regular
+raleway semibold
+
+#FFFFFF
+#676F9D
+#424769
+#2D3250
+#F9B17A
