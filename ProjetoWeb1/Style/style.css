@@ -160,3 +160,20 @@ body {
 .info a:hover {
     color: #FFFFFF;
 }
+
+.github-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.github-link img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px; /* Espaço entre a imagem e o texto */
+}
+
+.github-link p {
+    margin: 0;
+}
