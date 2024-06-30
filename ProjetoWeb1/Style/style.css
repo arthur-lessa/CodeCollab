@@ -11,7 +11,9 @@ body {
     linear-gradient(
       rgba(45,50,80,.85),rgba(45,50,80,.85)
     ),
-    url(../Archives/Background_Dev.png) no-repeat;
+    url(../Archives/Background_Dev.png) no-repeat center center fixed;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .navbar {
