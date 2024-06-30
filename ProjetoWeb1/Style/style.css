@@ -196,7 +196,8 @@ body {
 
 /* Estilos para a seção de boas-vindas */
 .welcome-section {
-    text-align: center;
+    text-align: justify;
+    justify-content: center;
     padding: 20px;
     background-color: #676f9d;
     border-radius: 10px;
