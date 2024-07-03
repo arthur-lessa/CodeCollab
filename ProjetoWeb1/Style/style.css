@@ -201,7 +201,7 @@ body {
 .welcome-section {
     text-align: justify;
     justify-content: center;
-    padding: 20px;
+    padding: 20px auto;
     background-color: #676f9d;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
