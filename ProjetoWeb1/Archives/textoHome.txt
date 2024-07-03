@@ -1,0 +1,23 @@
+Bem-vindos ao Projeto Escolar!
+Sejam bem-vindos à homepage do projeto escolar de desenvolvimento web. Esta página compartilha o que foi aprendido e construído ao longo do semestre. 🚀
+
+Sobre o Projeto
+Este projeto é uma jornada onde várias tecnologias e ferramentas essenciais para qualquer desenvolvedor web foram colocadas em prática. A aplicação completa utiliza HTML5 e CSS3 para estruturar e estilizar páginas de maneira moderna e responsiva. Além disso, houve um mergulho profundo no mundo do versionamento de código com Git e GitHub, garantindo que todas as mudanças e colaborações fossem bem organizadas e seguras.
+
+Tecnologias Utilizadas
+HTML5: A base de tudo. O conteúdo foi estruturado com as novas tags semânticas, garantindo melhor acessibilidade e SEO.
+CSS3: As páginas ganharam vida com estilos incríveis, utilizando flexbox, grid e animações. A responsividade foi uma prioridade!
+JavaScript: Interatividade e funcionalidades dinâmicas foram adicionadas, fazendo a mágica acontecer no front-end.
+Git & GitHub: Todo o código foi versionado, permitindo colaboração em equipe e mantendo um histórico claro de todas as mudanças. Se algo deu errado, sempre foi possível voltar atrás!
+VS Code: O editor de código preferido. Com suas extensões e funcionalidades, o desenvolvimento foi muito mais fluido e produtivo.
+Node.js & NPM: O ambiente de desenvolvimento foi configurado, pacotes e scripts foram gerenciados, tornando o processo de desenvolvimento mais eficiente.
+O Que Se Encontra Aqui
+Página Inicial: Uma introdução ao projeto e ao time.
+Sobre: Detalhes sobre cada membro da equipe e o processo de desenvolvimento.
+Serviços: Uma seção fictícia onde são descritos os serviços que poderiam ser oferecidos com as habilidades adquiridas.
+Portfólio: Exemplos práticos do que foi desenvolvido, com foco em design responsivo e interatividade.
+Contato: Um formulário para feedback e sugestões. A opinião dos visitantes é muito importante!
+Conclusão
+Este projeto foi uma excelente oportunidade para aprender e aplicar conceitos fundamentais do desenvolvimento web. Espera-se que o resultado seja apreciado tanto quanto foi divertido criar! Se houver qualquer dúvida ou sugestão, não hesite em entrar em contato.
+
+Aproveite a navegação e obrigado pela visita! 💻✨
