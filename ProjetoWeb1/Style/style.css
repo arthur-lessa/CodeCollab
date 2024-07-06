@@ -7,11 +7,7 @@ body {
     background-color: rgba(45, 50, 80, 0.85);
     color: white;
     text-align: center;
-    background:
-    linear-gradient(
-      rgba(45,50,80,.85),rgba(45,50,80,.85)
-    ),
-    url(../Archives/Background_Dev.png) no-repeat center center fixed;
+    /* background:radial-gradient(#8c8c8c, #2f2c79); */
     background-attachment: fixed;
     background-size: cover;
 }
@@ -44,7 +40,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .navbar .logo {
@@ -120,7 +116,7 @@ body {
 }
 
 .developer-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-8px);
 }
 
 .photo {
@@ -162,7 +158,7 @@ body {
 }
 
 .info a:hover {
-    color: #FFFFFF;
+    /* color: #FFFFFF; */
     transform: translateY(-6px);
 }
 
@@ -214,6 +210,12 @@ body {
     transform: translateY(-7px);
 }
 
+.welcome-section h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
 /* Estilos para a seção de tecnologias */
 .technologies-section {
     text-align: center;
@@ -244,7 +246,7 @@ body {
 
 }
 
-/*Card utilizado nos textos de Home*/
+/*Card utilizado nos textos de Sobre*/
 .text-card {
     padding: 20px;
     background-color: #676f9d;
@@ -272,5 +274,81 @@ body {
     margin-bottom: 15px;
     line-height: 1.6;
     margin-left: 20px; /* Ajuste para alinhar listas */
+}
+
+/* Container para os cards da seção "Sobre" */
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre os cards */
+    padding: 20px;
+}
+
+/* Card para a seção "Sobre" que ocupa metade da tela */
+.about-card {
+    padding: 20px;
+    background-color: #676f9d;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 0 1 calc(50% - 20px); /* Ocupa metade da largura da tela, ajustando para o gap */
+    transition: transform 0.3s ease;
+    text-align: justify; /* Alinha o texto justificado */
+}
+
+.about-card:hover {
+    transform: translateY(-8px);
+}
+
+.about-card h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px; /* Reduzido o espaço abaixo do título */
+}
+
+.about-card p, .about-card ul {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Estilo para as imagens nos cards da seção "Sobre" */
+.about-image {
+    width: 70px; /* Tamanho da imagem */
+    height: auto;
+    display: block;
+    margin: 0 auto 15px; /* Centraliza a imagem e ajusta margem inferior */
+    border-radius: 0; /* Remove bordas */
+    box-shadow: none; /* Remove sombra */
+    transition: transform 0.3s ease;
+}
+
+.about-image:hover {
+    transform: translateY(-5px);
+}
+
+/* Tamanho específico para a imagem do CSS */
+.css-image {
+    width: 80px; /* Ajuste para o tamanho desejado */
+}
+
+.about-images {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espaçamento entre as imagens */
+    margin-bottom: 15px; /* Adiciona margem inferior entre as imagens e o texto */
+    transition: transform 0.3s ease;
+}
+
+.about-images :hover {
+    transform: translateY(-3px);
+}
+
+.about-images img {
+    width: 70px; /* Tamanho padrão das imagens */
+    height: auto;
+    margin: 0; /* Remove margens extras */
+    border-radius: 0; /* Remove bordas */
+    box-shadow: none; /* Remove sombra */
 }
 
