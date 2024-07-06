@@ -116,7 +116,7 @@ body {
 }
 
 .developer-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-7px);
 }
 
 .photo {
@@ -159,7 +159,7 @@ body {
 
 .info a:hover {
     /* color: #FFFFFF; */
-    transform: translateY(-6px);
+    transform: translateY(-5px);
 }
 
 .github-link {
@@ -237,7 +237,7 @@ body {
 }
 
 .technologies-section:hover {
-    transform: translateY(-10px);
+    transform: translateY(-7px);
 }
 
 .logo-icon {
@@ -260,7 +260,7 @@ body {
 }
 
 .text-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-7px);
 }
 
 .text-card h2 {
@@ -297,7 +297,7 @@ body {
 }
 
 .about-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-7px);
 }
 
 .about-card h2 {
@@ -340,8 +340,13 @@ body {
     transition: transform 0.3s ease;
 }
 
-.about-images :hover {
-    transform: translateY(-3px);
+.about-images a {
+    display: inline-block; /* Garante que os links se comportem como blocos */
+    transition: transform 0.3s ease; /* Aplica a transição de hover */
+}
+
+.about-images a:hover {
+    transform: translateY(-5px); /* Efeito de levantamento no hover */
 }
 
 .about-images img {
