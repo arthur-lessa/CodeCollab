@@ -1,0 +1,188 @@
+/* Classes destinadas à HOMEPAGE */
+
+/* CLASSES PRINCIPAIS UTILIZADAS EM TODAS AS PÁGINAS: */
+/* ------------------------------------------------------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    background-color: rgba(45, 50, 80, 0.85);
+    color: white;
+    text-align: center;
+    /* background:radial-gradient(#8c8c8c, #2f2c79); */
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #676f9d;
+    padding: 10px 150px;
+    text-align: center;
+}
+
+.menu > li > a {
+    background-color: #424769;
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.6s ease, border-radius 0.6s ease;
+    text-align: center;
+}
+
+.menu > li > a:hover {
+    background-color: #2d3250;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1.1);
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.navbar .menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.navbar .menu li {
+    margin: 0 10px;
+    align-items: center;
+
+}
+
+/* Estilo do footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+
+
+/* Estilos para a seção de boas-vindas */
+.welcome-section {
+    text-align: justify;
+    justify-content: center;
+    padding: 20px;
+    background-color: #676f9d;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px auto;
+    transition: transform 0.3s ease;
+    max-width: 1000px;
+    text-align: left;
+}
+
+.welcome-section:hover {
+    transform: translateY(-7px);
+}
+
+.welcome-section p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    margin-left: 20px;
+}
+
+
+.welcome-section h2 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/*Card utilizado nos textos de Sobre*/
+.text-card {
+    padding: 20px;
+    background-color: #676f9d;
+    border-radius: 10px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    transition: transform 0.3s ease;
+    text-align: left;
+    justify-content: center;
+}
+
+.text-card:hover {
+    transform: translateY(-7px);
+}
+
+.text-card h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.text-card a { 
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.text-card p, .text-card ul {
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    margin-left: 20px; /* Ajuste para alinhar listas */
+}
+
+.animation {
+    animation-duration: 10s;
+    animation-name: Animacao;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    overflow: hidden; /* Garantir que o texto não ultrapasse os limites do container */
+    white-space: nowrap; /* Evitar que o texto quebre em várias linhas */
+}
+
+.animation h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: inline-block; /* Certificar-se de que o elemento se comporte corretamente na animação */
+}
+
+@keyframes Animacao {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    40% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    60% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
