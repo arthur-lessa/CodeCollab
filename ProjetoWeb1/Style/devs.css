@@ -58,6 +58,28 @@ body {
     font-size: 1.5em;
     font-weight: bold;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.navbar .logo a { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .logo > a > img {
+    width: 38px;
+    height: 38px;
+}
+
+.navbar .logo > img {
+    width: 38px;
+    height: 38px;
 }
 
 .navbar .menu {
@@ -79,6 +101,9 @@ footer {
     color: #fff;
     margin-top: 20px;
     width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
 }
 
 /* ------------------------------------------------------------------------------------------------------------- */
@@ -94,11 +119,12 @@ footer {
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
     flex-wrap: wrap;
-    width: 100%;
+    width: 1200px;
     max-width: 1200px; /* Limita a largura máxima para um layout responsivo */
     margin: 0 auto; /* Centraliza o container */
     padding: 20px;
     box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+    gap: 30px;
 }
 
 /* Estilo dos cards de desenvolvedor */
@@ -106,13 +132,14 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 300px;
+    width: 350px;
     padding: 20px;
     background-color: #676f9d;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     transition: transform 0.3s ease;
-    margin: 20px;
+    margin-top: 4rem;
+    transform: scale(1);
 }
 
 .developer-card:hover {
@@ -175,5 +202,5 @@ footer {
 }
 
 .github-link p {
-    margin: 0;
+    margin: 0;
 }

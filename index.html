@@ -5,17 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="ProjetoWeb1/Style/home.css">
+    <link rel="icon" href="../../ProjetoWeb1/Archives/icons8-code-64.png">
+   
+</head>
+<body>
 
     <nav class="navbar">
-        <div class="logo">CodeCollab</div>
+        <div class="logo">
+            <img src="../../ProjetoWeb1/Archives/icons8-code-64.png">   
+            <div>
+                CodeCollab           
+            </div>
+        </div>
+
         <ul class="menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="ProjetoWeb1/Templates/sobre.html">Sobre</a></li>
             <li><a href="ProjetoWeb1/Templates/desenvolvedores.html">Desenvolvedores</a></li>
         </ul>
     </nav>
-</head>
-<body>
 
     <br>
     <div class="animation">
@@ -23,16 +31,25 @@
     </div>
 
     <!-- Mensagem de Boas-vindas -->
-    <section class="welcome-section">
-        <h2>Prepare-se para uma Experiência Única!</h2>
-        <p>
-        Esta é a HomePage do nosso projeto de Aplicação a Web-1. Esta página, além do conteúdo visto, apresenta algumas outras tecnologias que são muito úteis para o <strong>Desenvolvimento Web</strong>. Esperamos que sua experiência seja proveitosa!
-        </p>
+    <section class="card-container">
+        <div class="container-text">
+            <h2>Prepare-se para uma Experiência Única!</h2>
+            <p>
+            Esta é a HomePage do nosso projeto de Aplicação a Web-1. Esta página, além do conteúdo visto, apresenta algumas outras tecnologias que são muito úteis para o <strong>Desenvolvimento Web</strong>. Esperamos que sua experiência seja proveitosa!
+            </p>
+
+            <a href="#vision">
+                Conheça mais
+            </a>
+        </div>
+
+        <img src="ProjetoWeb1/Archives/home-land-page-removebg-preview.png" alt="homepage">        
+
     </section>
 
     <!-- Sobre o Projeto -->
     <section class="text-card">
-        <h2>Uma visão geral sobre o Projeto</h2>
+        <h2 id="vision">Uma visão geral sobre o Projeto</h2>
         <p>
             Este projeto é algo essencial para colocar o que foi aprendido em prática, podendo assim desenvolver uma visão lógica e prática sobre. A aplicação, de forma geral, utiliza HTML5 e CSS3 para estruturar e estilizar páginas de maneira moderna e responsiva. Além disso, aproveitou-se do conhecimento já adquirido no mundo do versionamento de código, utilizando Git e GitHub, garantindo que todas as mudanças e colaborações fossem organizadas, documentadas e seguras. Convidamos você para saber mais informações sobre o projeto na aba "<strong><a href="ProjetoWeb1/Templates/sobre.html" class=>Sobre</a></strong>", no Menu de Navegação.
         </p>

@@ -9,6 +9,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
+    
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body {
@@ -21,6 +26,9 @@ body {
     /* background:radial-gradient(#8c8c8c, #2f2c79); */
     background-attachment: fixed;
     background-size: cover;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
 }
 
 .navbar {
@@ -30,6 +38,10 @@ body {
     background-color: #676f9d;
     padding: 10px 150px;
     text-align: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
 }
 
 .menu > li > a {
@@ -58,6 +70,16 @@ body {
     font-size: 1.5em;
     font-weight: bold;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.navbar .logo img {
+    width: 38px;
+    height: 38px;
 }
 
 .navbar .menu {
@@ -85,7 +107,7 @@ footer {
 
 
 /* Estilos para a seção de boas-vindas */
-.welcome-section {
+/* .welcome-section {
     text-align: justify;
     justify-content: center;
     padding: 20px;
@@ -114,7 +136,7 @@ footer {
     font-size: 25px;
     font-weight: 700;
     margin-bottom: 10px;
-}
+} */
 
 /*Card utilizado nos textos de Sobre*/
 .text-card {
@@ -166,6 +188,44 @@ footer {
     font-weight: 700;
     margin-bottom: 10px;
     display: inline-block; /* Certificar-se de que o elemento se comporte corretamente na animação */
+    margin-top: 75px;
+}
+
+.card-container {
+    padding: 20px;
+    background-color: #676f9d;
+    border-radius: 10px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    transition: transform 0.3s ease;
+    text-align: left;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;    
+}
+
+.container-text {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container-text a{
+    color: white;
+    text-decoration: none;
+    border-radius: 17px;
+    padding: 16px;
+    background-color: #424769;
+}
+
+.container-text a:hover{
+    background-color: #2d3250;
+
 }
 
 @keyframes Animacao {

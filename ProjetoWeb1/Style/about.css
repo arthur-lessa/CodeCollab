@@ -30,6 +30,7 @@ body {
     background-color: #676f9d;
     padding: 10px 150px;
     text-align: center;
+    
 }
 
 .menu > li > a {
@@ -58,6 +59,23 @@ body {
     font-size: 1.5em;
     font-weight: bold;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.navbar .logo a { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .logo > a > img {
+    width: 38px;
+    height: 38px;
 }
 
 .navbar .menu {
@@ -79,6 +97,9 @@ footer {
     color: #fff;
     margin-top: 20px;
     width: 100%;
+    position: static;
+    left: 0;
+    bottom: 0;
 }
 
 /* ------------------------------------------------------------------------------------------------------------- */
@@ -269,6 +290,5 @@ footer {
 .workflow-card p, .workflow-card ul {
     font-size: 18px;
     line-height: 1.6;
-    margin-bottom: 15px;
+    margin-bottom: 15px;
 }
-
