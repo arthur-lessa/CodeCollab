@@ -15,10 +15,9 @@ body {
     font-family: 'Raleway';
     margin: 0;
     padding: 0;
-    background-color: rgba(45, 50, 80, 0.85);
     color: white;
     text-align: center;
-    /* background:radial-gradient(#8c8c8c, #2f2c79); */
+    background:radial-gradient(#2D3250, #424769); 
     background-attachment: fixed;
     background-size: cover;
 }
@@ -86,10 +85,10 @@ footer {
 
 /* Estilos para a seção de boas-vindas */
 .welcome-section {
-    text-align: justify;
-    justify-content: center;
+    display: flex;
+    align-items: center;
     padding: 20px;
-    background-color: #676f9d;
+    background-color: rgba(0, 0, 0, 0.4);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     margin: 20px auto;
@@ -98,28 +97,23 @@ footer {
     text-align: left;
 }
 
-.welcome-section:hover {
-    transform: translateY(-7px);
+.welcome-section img {
+    margin-left: 5px;
+    margin-right: 20px; /* Espaço entre a imagem e o texto */
+    max-width: 50px; /* Limita a largura da imagem para manter a proporção */
 }
 
 .welcome-section p {
     font-size: 16px;
     margin-bottom: 15px;
     line-height: 1.6;
-    margin-left: 20px;
-}
-
-
-.welcome-section h2 {
-    font-size: 25px;
-    font-weight: 700;
-    margin-bottom: 10px;
+    margin: 0;
 }
 
 /*Card utilizado nos textos de Sobre*/
 .text-card {
     padding: 20px;
-    background-color: #676f9d;
+    background-color: rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     margin: 20px auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -127,10 +121,6 @@ footer {
     transition: transform 0.3s ease;
     text-align: left;
     justify-content: center;
-}
-
-.text-card:hover {
-    transform: translateY(-7px);
 }
 
 .text-card h2 {
@@ -145,6 +135,11 @@ footer {
     text-decoration: none;
 }
 
+.text-card a:hover {
+    color: #dbe1ff;
+    text-decoration: underline;
+}
+
 .text-card p, .text-card ul {
     font-size: 16px;
     margin-bottom: 15px;
@@ -153,10 +148,9 @@ footer {
 }
 
 .animation {
-    animation-duration: 10s;
+    animation-duration: 3s;
     animation-name: Animacao;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out forwards;
     overflow: hidden; /* Garantir que o texto não ultrapasse os limites do container */
     white-space: nowrap; /* Evitar que o texto quebre em várias linhas */
 }
@@ -173,16 +167,8 @@ footer {
         transform: translateX(100%);
         opacity: 0;
     }
-    40% {
-        transform: translateX(0%);
-        opacity: 1;
-    }
-    60% {
-        transform: translateX(0%);
-        opacity: 1;
-    }
     100% {
-        transform: translateX(-100%);
-        opacity: 0;
+        transform: translateX(0%);
+        opacity: 1;
     }
 }

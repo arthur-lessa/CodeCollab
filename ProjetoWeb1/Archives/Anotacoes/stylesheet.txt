@@ -1,0 +1,10 @@
+raleway regular
+raleway semibold
+
+#FFFFFF - branco
+#dbe1ff - azul esbranquiçado
+#adb9ff - azul esbranquiçado (mais escuro)
+#676F9D - azul mais claro
+#424769 - azul médio
+#2D3250 - azul mais escuro
+#F9B17A - dourado
