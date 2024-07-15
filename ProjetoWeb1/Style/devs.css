@@ -30,6 +30,9 @@ body {
     background-color: #676f9d;
     padding: 10px 150px;
     text-align: center;
+    z-index: 20;
+    position: fixed;
+    width: 100%;
 }
 
 .menu > li > a {
@@ -118,13 +121,13 @@ footer {
 .developers {
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
-    flex-wrap: wrap;
-    width: 1200px;
+    width: 1100px;
     max-width: 1200px; /* Limita a largura máxima para um layout responsivo */
     margin: 0 auto; /* Centraliza o container */
     padding: 20px;
-    box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+    box-sizing: border-box; /*Garante que o padding não aumente a largura total */
     gap: 30px;
+    margin-top: -65px;
 }
 
 /* Estilo dos cards de desenvolvedor */
@@ -202,5 +205,26 @@ footer {
 }
 
 .github-link p {
-    margin: 0;
+    margin:0;
+}
+
+.active{
+    background-color: #2d3250 !important;
+}
+
+.devs-title-card{
+    text-align: center;
+    justify-content: center;
+    padding: 15px;
+    background-color: #676f9d;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 10px auto;
+    transition: transform 0.4s ease;
+    max-width: 400px;
+    margin-top: 75px;
+}
+
+.devs-title-card:hover{
+    transform: translateY(-5px);
 }

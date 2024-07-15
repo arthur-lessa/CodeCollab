@@ -23,6 +23,25 @@ body {
     background-size: cover;
 }
 
+body h2{
+    font-size: 40px;    
+}
+
+body::-webkit-scrollbar{
+    width: 8px;
+   }
+   
+   body::-webkit-scrollbar-track{
+     background:black;
+   
+   }
+   
+   body::-webkit-scrollbar-thumb {
+     background-color: #6d6d6d;  
+     border-radius: 20px;  
+     
+   }
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -30,7 +49,9 @@ body {
     background-color: #676f9d;
     padding: 10px 150px;
     text-align: center;
-    
+    z-index: 20;
+    position: fixed;
+    width: 100%;
 }
 
 .menu > li > a {
@@ -119,6 +140,7 @@ footer {
     margin: 10px auto;
     transition: transform 0.4s ease;
     max-width: 400px;
+    margin-top: 75px;
 }
 
 .technologies-titles-card h2{
@@ -291,4 +313,152 @@ footer {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 15px;
+}
+
+.active{
+    background-color: #2d3250 !important;
+}
+
+.circles{
+    display: flex;
+    gap: 6px;
+    margin-bottom: 12px;
+}
+
+.circle{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+#cl1{
+    background: red;
+}
+
+#cl2{
+    background: orange;
+}
+
+#cl3{
+    background: rgb(25, 184, 25);
+}
+
+.workflow-elements{
+    position: relative;
+}
+
+.workflow{
+    padding: 20px;
+    background-color: #676f9d;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: justify; /* Alinha o texto justificado */
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    transition: transform 0.4s ease;
+}
+
+.workflow:hover{
+    transform: translateY(-7px);
+}
+
+.workflow h2{
+    font-size: 27px;
+}
+
+.workflow img{
+    width: 350px;
+    height: 350px;
+    align-items: center;
+}
+
+.workflow-image{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.itens{
+    margin-left: 36px;
+}
+
+.itens-texts{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    align-items: center;
+    position: relative;
+}
+
+.vertical-line{
+    position: absolute;
+    background: #fff;
+    width: 4px;
+    border-radius: 16px;
+    height: 100%;
+    margin-left: 10px;
+}
+
+.second-workflow-elements{
+    position: relative;
+}
+
+.second-workflow-card{
+    padding: 20px;
+    background-color: #676f9d;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: justify; /* Alinha o texto justificado */
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    transition: transform 0.4s ease;
+}
+
+.second-workflow-card:hover{
+    transform: translateY(-7px);
+}
+
+.second-workflow-card h2{
+    font-size: 27px;
+    text-align: left;
+}
+
+.second-workflow-card img{
+    width: 400px;
+    height: 300px;
+    align-items: center;
+}
+
+.second-itens-texts{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    align-items: center;
+    position: relative;
+    margin-right: 40px;
+}
+
+.second-itens{
+    margin-left: 36px;
+}
+
+.second-workflow-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-vertical-line{
+    position: absolute;
+    background: #fff;
+    width: 4px;
+    border-radius: 16px;
+    height: 100%;
+    margin-right: 10px;   
+    right: 0;
+    top: 0;
 }

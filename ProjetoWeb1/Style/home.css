@@ -4,16 +4,15 @@
 /* ------------------------------------------------------------------------------------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
-    
-}
-
-html{
-    scroll-behavior: smooth;
 }
 
 body {
@@ -27,8 +26,6 @@ body {
     background-attachment: fixed;
     background-size: cover;
     overflow-x: hidden;
-    scroll-behavior: smooth;
-
 }
 
 .navbar {
@@ -42,6 +39,7 @@ body {
     left: 0;
     top: 0;
     width: 100%;
+    z-index: 20;
 }
 
 .menu > li > a {
@@ -189,9 +187,11 @@ footer {
     margin-bottom: 10px;
     display: inline-block; /* Certificar-se de que o elemento se comporte corretamente na animação */
     margin-top: 75px;
+    z-index: 2;
 }
 
 .card-container {
+    position: relative;
     padding: 20px;
     background-color: #676f9d;
     border-radius: 10px;
@@ -203,16 +203,28 @@ footer {
     justify-content: center;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    align-items: center;    
+    max-height: 470px;
+    margin-bottom: -6px;
+}
+
+.card-container div{
+    max-height: 370px;
+    display: flex;
+    align-items: center;
+}
+
+.card-container img {
+    transform: scale(0.8);
 }
 
 .container-text {
-    height: 100%;
+    height: 470px;
     justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    position: relative;
 }
 
 .container-text a{
@@ -221,11 +233,25 @@ footer {
     border-radius: 17px;
     padding: 16px;
     background-color: #424769;
+    margin-top: 35px;
 }
 
 .container-text a:hover{
     background-color: #2d3250;
 
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 15px;
+    
+}
+
+.active{
+    background-color: #2d3250 !important;
 }
 
 @keyframes Animacao {
