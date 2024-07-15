@@ -4,6 +4,10 @@
 /* ------------------------------------------------------------------------------------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -15,16 +19,12 @@ body {
     font-family: 'Raleway';
     margin: 0;
     padding: 0;
-    background-color: rgba(45, 50, 80, 0.85);
+    background:radial-gradient(#000c61, #424769);  
     color: white;
     text-align: center;
-    /* background:radial-gradient(#8c8c8c, #2f2c79); */
     background-attachment: fixed;
     background-size: cover;
-}
-
-body h2{
-    font-size: 40px;    
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -34,9 +34,11 @@ body h2{
     background-color: #676f9d;
     padding: 10px 150px;
     text-align: center;
-    z-index: 20;
     position: fixed;
+    left: 0;
+    top: 0;
     width: 100%;
+    z-index: 20;
 }
 
 .menu > li > a {
@@ -72,16 +74,10 @@ body h2{
     gap: 8px;
 }
 
-.navbar .logo a { 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.navbar .logo > a > img {
-    width: 38px;
-    height: 38px;
+.navbar .logo img {
+    width: 50px;
+    height: 50px;
+    filter: invert(100);
 }
 
 .navbar .menu {
@@ -103,9 +99,6 @@ footer {
     color: #fff;
     margin-top: 20px;
     width: 100%;
-    position: static;
-    left: 0;
-    bottom: 0;
 }
 
 /* ------------------------------------------------------------------------------------------------------------- */
@@ -119,7 +112,7 @@ footer {
     text-align: center;
     justify-content: center;
     padding: 15px;
-    background-color: #676f9d;
+    background-color: rgba(103, 111, 157, 0.8);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     margin: 10px auto;
@@ -171,10 +164,10 @@ footer {
     padding: 20px;
 }
 
-/* Card para a seção "Sobre" que ocupa metade da tela */
+/* Cards da seção de Tecnologia */
 .about-card {
     padding: 20px;
-    background-color: #676f9d;
+    background-color: rgba(103, 111, 157, 0.5);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     flex: 0 1 calc(50% - 20px); /* Ocupa metade da largura da tela, ajustando para o gap */
@@ -276,7 +269,7 @@ footer {
 
 .workflow-card {
     padding: 20px;
-    background-color: #676f9d;
+    background-color: rgba(103, 111, 157, 0.5);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     flex: 0 1 calc(50% - 20px); /* Ocupa metade da largura da tela, ajustando para o gap */
@@ -334,7 +327,7 @@ footer {
 
 .workflow {
     padding: 20px;
-    background-color: #676f9d;
+    background-color: rgba(103, 111, 157, 0.4);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -392,7 +385,7 @@ footer {
 
 .second-workflow-card{
     padding: 20px;
-    background-color: #676f9d;
+    background-color: rgba(103, 111, 157, 0.4);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
