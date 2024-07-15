@@ -203,12 +203,12 @@ footer {
     border-radius: 10px;
     margin: 20px auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 98%;
+    width: 95%;
     transition: transform 0.3s ease;
     text-align: left;
     justify-content: center;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 2fr 1fr;
     max-height: 470px;
     margin-bottom: -6px;
 }
@@ -221,6 +221,7 @@ footer {
     max-height: 370px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .card-container img {
@@ -235,6 +236,7 @@ footer {
     flex-direction: column;
     gap: 20px;
     position: relative;
+    font-size: 18px;
 }
 
 .container-text a{
@@ -253,7 +255,7 @@ footer {
 .card {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    width: 98%;
+    width: 95%;
     margin: 0 auto;
     gap: 15px;
 }
