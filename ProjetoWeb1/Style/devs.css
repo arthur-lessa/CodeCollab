@@ -21,6 +21,8 @@ body {
     /* background:radial-gradient(#8c8c8c, #2f2c79); */
     background-attachment: fixed;
     background-size: cover;
+    overflow-x: hidden;
+
 }
 
 .navbar {
@@ -44,7 +46,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform 0.6s ease, border-radius 0.6s ease;
+    transition: transform 0.4s ease, border-radius 0.4s ease;
     text-align: center;
 }
 
@@ -104,7 +106,7 @@ footer {
     color: #fff;
     margin-top: 20px;
     width: 100%;
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
 }
@@ -220,7 +222,7 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     margin: 10px auto;
-    transition: transform 0.4s ease;
+    transition: transform 0.3s ease;
     max-width: 400px;
     margin-top: 75px;
 }

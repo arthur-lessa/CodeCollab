@@ -51,7 +51,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform 0.6s ease, border-radius 0.6s ease;
+    transition: transform 0.4s ease, border-radius 0.4s ease;
     text-align: center;
 }
 
@@ -197,7 +197,7 @@ footer {
     border-radius: 10px;
     margin: 20px auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 1000px;
+    width: 98%;
     transition: transform 0.3s ease;
     text-align: left;
     justify-content: center;
@@ -205,6 +205,10 @@ footer {
     grid-template-columns: repeat(2,1fr);
     max-height: 470px;
     margin-bottom: -6px;
+}
+
+.card-container:hover {
+    transform: translateY(-7px);
 }
 
 .card-container div{
@@ -244,10 +248,9 @@ footer {
 .card {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    max-width: 1000px;
+    width: 98%;
     margin: 0 auto;
     gap: 15px;
-    
 }
 
 .active{
