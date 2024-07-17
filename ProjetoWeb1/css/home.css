@@ -25,6 +25,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     overflow-x: hidden;
+    
 }
 
 .navbar {
@@ -39,6 +40,36 @@ body {
     top: 0;
     width: 100%;
     z-index: 20;
+    flex-wrap: wrap;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar .logo a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .logo img {
+    width: 60px;
+    height: 60px;
+}
+
+.navbar .menu {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.navbar .menu li {
+    margin: 0 10px;
 }
 
 .menu > li > a {
@@ -56,46 +87,33 @@ body {
 
 .menu > li > a:hover {
     background-color: #2d3250;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     transform: scale(1.1);
 }
 
-.navbar .logo {
-    font-size: 1.5em;
-    font-weight: bold;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    text-decoration: none;
-}
-
-.navbar .logo a {
-    color: white;
-    text-decoration: none;
-}
-
-.navbar .logo img {
-    width: 50px;
-    height: 50px;
-    filter: invert(100);
-}
-
-.navbar .menu {
-    display: flex;
-    list-style: none;
-    align-items: center;
-}
-
-.navbar .menu li {
-    margin: 0 10px;
-    align-items: center;
-
+/* Media query para telas menores */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+    
+    .navbar .logo {
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .navbar .menu {
+        justify-content: center;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .navbar .menu li {
+        margin: 0 5px;
+    }
 }
 
 /* Estilo do footer */
@@ -109,39 +127,6 @@ footer {
 
 /* ------------------------------------------------------------------------------------------------------------- */
 
-
-/* Estilos para a seção de boas-vindas */
-/* .welcome-section {
-    text-align: justify;
-    justify-content: center;
-    padding: 20px;
-    background-color: #676f9d;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    margin: 20px auto;
-    transition: transform 0.3s ease;
-    max-width: 1000px;
-    text-align: left;
-}
-
-.welcome-section:hover {
-    transform: translateY(-7px);
-}
-
-.welcome-section p {
-    font-size: 16px;
-    margin-bottom: 15px;
-    line-height: 1.6;
-    margin-left: 20px;
-}
-
-
-.welcome-section h2 {
-    font-size: 25px;
-    font-weight: 700;
-    margin-bottom: 10px;
-} */
-
 /*Card utilizado nos textos de Sobre*/
 .text-card {
     padding: 20px;
@@ -153,10 +138,6 @@ footer {
     transition: transform 0.3s ease;
     text-align: left;
     justify-content: center;
-}
-
-.text-card:hover {
-    transform: translateY(-7px);
 }
 
 .text-card h2 {
@@ -176,6 +157,25 @@ footer {
     margin-bottom: 15px;
     line-height: 1.6;
     margin-left: 20px; /* Ajuste para alinhar listas */
+}
+
+.text-card:hover {
+    transform: translateY(-7px);
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 98%;
+    margin: auto auto;
+    gap: 15px;
+}
+
+@media (max-width: 768px) {
+    .card {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
 }
 
 .animation {
@@ -208,13 +208,9 @@ footer {
     text-align: left;
     justify-content: center;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 50% 30%;
     max-height: 470px;
     margin-bottom: -6px;
-}
-
-.card-container:hover {
-    transform: translateY(-7px);
 }
 
 .card-container div{
@@ -225,6 +221,10 @@ footer {
 
 .card-container img {
     transform: scale(0.8);
+}
+
+.card-container:hover {
+    transform: translateY(-7px);
 }
 
 .container-text {
@@ -250,12 +250,22 @@ footer {
     background-color: #2d3250;
 }
 
-.card {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    width: 98%;
-    margin: 0 auto;
-    gap: 15px;
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: 1fr; /* Altera para uma coluna em telas menores */
+        max-height: none;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .container-text {
+        width: 100%; /* Ajustado para preencher a largura total */
+        padding: 20px; /* Adiciona padding para melhor visualização em telas pequenas */
+    }
+
+    .card-container img {
+        transform: scale(0.6); /* Ajusta a escala da imagem para telas menores */
+    }
 }
 
 .active{
