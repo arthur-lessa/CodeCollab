@@ -226,7 +226,7 @@ footer {
     border-radius: 10px;
     margin: 20px auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 95%;
+    width: 98%;
     transition: transform 0.3s ease;
     text-align: left;
     justify-content: center;
@@ -240,7 +240,6 @@ footer {
     max-height: 370px;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .card-container img {
@@ -259,7 +258,6 @@ footer {
     flex-direction: column;
     gap: 20px;
     position: relative;
-    font-size: 18px;
 }
 
 .container-text a{
@@ -275,12 +273,22 @@ footer {
     background-color: #2d3250;
 }
 
-.card {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    width: 98%;
-    margin: 0 auto;
-    gap: 15px;
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: 1fr; /* Altera para uma coluna em telas menores */
+        max-height: none;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .container-text {
+        width: 100%; /* Ajustado para preencher a largura total */
+        padding: 20px; /* Adiciona padding para melhor visualização em telas pequenas */
+    }
+
+    .card-container img {
+        transform: scale(0.6); /* Ajusta a escala da imagem para telas menores */
+    }
 }
 
 .active{
