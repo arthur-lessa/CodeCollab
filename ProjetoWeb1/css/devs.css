@@ -91,7 +91,7 @@ body {
 }
 
 /* Media query para telas menores */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -234,4 +234,21 @@ body {
 
 .devs-title-card:hover{
     transform: translateY(-5px);
+}
+
+@media (max-width: 900px) {
+    .developers {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .developer-card {
+        margin-top: 10px;
+    }
+
+    .devs-title-card{
+        margin-top: 125px;
+        margin-bottom: 75px;
+    }
 }
