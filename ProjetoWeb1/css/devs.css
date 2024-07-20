@@ -25,6 +25,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     overflow-x: hidden;
+    
 }
 
 .navbar {
@@ -39,6 +40,36 @@ body {
     top: 0;
     width: 100%;
     z-index: 20;
+    flex-wrap: wrap;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar .logo a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .logo img {
+    width: 60px;
+    height: 60px;
+}
+
+.navbar .menu {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.navbar .menu li {
+    margin: 0 10px;
 }
 
 .menu > li > a {
@@ -56,49 +87,33 @@ body {
 
 .menu > li > a:hover {
     background-color: #2d3250;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     transform: scale(1.1);
 }
 
-.navbar .logo {
-    font-size: 1.5em;
-    font-weight: bold;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-}
-
-.navbar .logo img {
-    width: 50px;
-    height: 50px;
-    filter: invert(100);
-}
-
-.navbar .menu {
-    display: flex;
-    list-style: none;
-    align-items: center;
-}
-
-.navbar .menu li {
-    margin: 0 10px;
-    align-items: center;
-
-}
-
-/* Estilo do footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    color: #fff;
-    margin-top: 20px;
-    width: 100%;
+/* Media query para telas menores */
+@media (max-width: 900px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+    
+    .navbar .logo {
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .navbar .menu {
+        justify-content: center;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .navbar .menu li {
+        margin: 0 5px;
+    }
 }
 
 /* ------------------------------------------------------------------------------------------------------------- */
@@ -219,4 +234,21 @@ footer {
 
 .devs-title-card:hover{
     transform: translateY(-5px);
+}
+
+@media (max-width: 900px) {
+    .developers {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .developer-card {
+        margin-top: 10px;
+    }
+
+    .devs-title-card{
+        margin-top: 125px;
+        margin-bottom: 75px;
+    }
 }
