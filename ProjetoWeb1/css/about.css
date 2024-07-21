@@ -336,6 +336,9 @@ body {
     background: rgb(25, 184, 25);
 }
 
+/* Fluxo de trabalho */
+
+/* Primeiro card */
 .workflow-elements{
     position: relative;
 }
@@ -394,6 +397,8 @@ body {
     margin-left: 10px;
 }
 
+
+/* Segundo card */
 .second-workflow-elements{
     position: relative;
 }
@@ -473,7 +478,19 @@ body {
         justify-content: center;
     }
 
+    .vertical-line {
+        margin-left: 0;
+    }
+
     .second-workflow-card {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));;
+    }
+    
+    .second-workflow-image {
+        scale: 0.9;
+    }
+
+    .second-vertical-line {
+        margin-right: 0;
     }
 }
