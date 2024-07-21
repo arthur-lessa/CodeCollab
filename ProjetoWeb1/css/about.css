@@ -116,6 +116,10 @@ body {
     }
 }
 
+.active{
+    background-color: #2d3250 !important;
+}
+
 /* ------------------------------------------------------------------------------------------------------------- */
 
 .logo-icon {
@@ -308,10 +312,6 @@ body {
     margin-bottom: 15px;
 }
 
-.active{
-    background-color: #2d3250 !important;
-}
-
 .circles{
     display: flex;
     gap: 6px;
@@ -472,10 +472,13 @@ body {
 
     .workflow {
         grid-template-columns: 1fr;
+        width: 100%; /* Ajusta a largura para 100% */
+        padding: 10px; /* Adiciona padding para evitar o texto encostar nas bordas */
     }
 
     .workflow-image {
         justify-content: center;
+        width: 100%; /* Ajusta a largura para 100% */
     }
 
     .vertical-line {
@@ -483,14 +486,29 @@ body {
     }
 
     .second-workflow-card {
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));;
+        grid-template-columns: 1fr; /* Coloca todas as colunas em uma única coluna */
+        padding: 10px; /* Adiciona padding para evitar o texto encostar nas bordas */
     }
     
     .second-workflow-image {
-        scale: 0.9;
+        justify-content: center; /* Centraliza a imagem */
+        width: 100%; /* Ajusta a largura para 100% */
+        margin-bottom: 10px; /* Adiciona margem inferior para espaçar do texto */
     }
 
     .second-vertical-line {
         margin-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .workflow img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .second-workflow-card img {
+        width: 300px;
+        height: 250px;
     }
 }

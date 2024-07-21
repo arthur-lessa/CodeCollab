@@ -116,6 +116,10 @@ body {
     }
 }
 
+.active{
+    background-color: #2d3250 !important;
+}
+
 /* ------------------------------------------------------------------------------------------------------------- */
 
 /* classe destinada a uma logo clicável no menu de navegação */
@@ -215,10 +219,6 @@ body {
     margin:0;
 }
 
-.active{
-    background-color: #2d3250 !important;
-}
-
 .devs-title-card{
     text-align: center;
     justify-content: center;
@@ -250,5 +250,11 @@ body {
     .devs-title-card{
         margin-top: 125px;
         margin-bottom: 75px;
+    }
+}
+
+@media (max-width: 914px) {
+    .developers {
+        width: 100%;
     }
 }
